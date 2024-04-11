@@ -21,6 +21,6 @@
   </main>
 </template>
 
-<style>
-  
+<style lang="scss">
+  @use './style/generic';
 </style>
