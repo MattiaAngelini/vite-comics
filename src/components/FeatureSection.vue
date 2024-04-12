@@ -31,11 +31,14 @@
 
 <template>
 
-   <section class="feat-section d-flex gap-3 justify-content-center align-items-center m-0">
+   <section class="feat-section ">
 
-    <ul v-for="card in cards">      
-        <li>{{ card.title }}</li>
-        <li><img :src="'src/assets/img/' + card.image" alt=""></li> 
+    <ul class="d-flex gap-3 justify-content-center align-items-center m-0 p-2">      
+     
+        <li  v-for="card in cards">
+            <img :src="'src/assets/img/' + card.image" alt="">
+            {{ card.title }}
+        </li> 
     </ul>
 
    </section>
@@ -49,6 +52,13 @@
 
  .feat-section {
     background-color: $brand-primary;
+    color: white;
+   
+   
+    img {
+        height: 80px;
+    }
  }
+
 
 </style>
