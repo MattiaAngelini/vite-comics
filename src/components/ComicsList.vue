@@ -8,7 +8,7 @@
 
 <template>
 
-   <section>ComicsList</section>
+   <section>Content goes hereeee</section>
 
 </template>
 
@@ -17,6 +17,8 @@
 
 section {
   background-color: black;
+  color: white;
 }
+
 
 </style>

@@ -28,6 +28,7 @@
     
     <AppFooter></AppFooter>
   
+
 </template>
 
 <style lang="scss">
