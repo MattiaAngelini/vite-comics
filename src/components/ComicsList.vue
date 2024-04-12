@@ -7,10 +7,16 @@
 </script>
 
 <template>
-  main
+
+   <section>ComicsList</section>
 
 </template>
 
+
 <style scoped lang="scss">
+
+section {
+  background-color: black;
+}
 
 </style>

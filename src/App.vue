@@ -1,12 +1,15 @@
 <script>
   import AppHeader from './components/AppHeader.vue';
-  import AppMain from './components/AppMain.vue';
+  import ComicsList from './components/ComicsList.vue';
+  import FeatureSection from './components/FeatureSection.vue';
   import AppFooter from './components/AppFooter.vue';
+
 
   export default {
     components: {
       AppHeader,
-      AppMain,
+      ComicsList,
+      FeatureSection,
       AppFooter,
     }
   }
@@ -14,13 +17,19 @@
 </script>
 
 <template>
-  <main>
+ 
     <AppHeader></AppHeader>
-    <AppMain></AppMain>
+   
+      <main>
+        <ComicsList></ComicsList>
+
+        <FeatureSection></FeatureSection>
+      </main>
+    
     <AppFooter></AppFooter>
-  </main>
+  
 </template>
 
 <style lang="scss">
-  @use './style/generic';
+@use './style/generic' as *;
 </style>
