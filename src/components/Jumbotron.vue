@@ -1,15 +1,16 @@
 <script>
  export default {
-        name: 'Jumbotron', 
-       
+        name: 'Jumbotron',       
     }
 </script>
 
 <template>
+        <!--CONTAINER IMG WRAP-->
         <div class="container-jumbotron"></div>
 </template>
 
 <style scoped lang="scss">
+@use './style/generic' as *;
 
     .container-jumbotron {
         height: 300px;

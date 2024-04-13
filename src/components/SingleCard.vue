@@ -8,17 +8,19 @@
 
 <template>  
     
+    <!--IMG & CARD from props-->
    <div class="ms-card">   
-        <img :src="image">
-        <div>{{title}}</div>
+        <img class="p-1" :src="image">
+        <div>{{ title }}</div>
    </div>
 
 </template>
 
 <style scoped lang="scss">
+@use './style/generic' as *;
 
-.ms-card {
-    color: white;
+    .ms-card {
+        color: white;
 
     img { width: 200px;
           height: 200px;

@@ -1,6 +1,4 @@
-
 <script>
-
 import SingleCard from '../components/SingleCard.vue';
 
 export default {
@@ -93,14 +91,24 @@ export default {
 <template>
   <section>
 
-    <div class="container">
+    <div class="container position-relative">
+    
+      <!--BADGE-->
+      <div class="badge text-bg-primary p-3 position-absolute">CURRENT SERIES</div> 
+      
+      <!--CARDS-->
       <div class="row">    
         <div v-for="card in cards" class="col-2 p-3">
-
-          <SingleCard :title="card.series" :image="card.thumb"></SingleCard>
-        
+          <SingleCard :title="card.series" :image="card.thumb"></SingleCard>  
         </div>
+
       </div>
+      
+      <!--BUTTON-->
+      <div class="d-flex justify-content-center"> 
+          <button type="button" class="btn btn-primary">LOAD MORE</button>
+      </div>
+      
     </div>
 
   </section>
@@ -108,6 +116,19 @@ export default {
 </template>
 
 <style scoped lang="scss">
-  section {background-color: #1c1c1c;
-           padding: 30px;}
+  @use './style/generic' as *;
+  @use '../style/partials/variables' as *;
+
+  section {background-color: $brand-secondary;
+           padding: 30px;
+
+              .badge {
+                top: -50px;
+              }
+
+              button {
+                width: 200px;
+                
+              }
+           }
 </style>

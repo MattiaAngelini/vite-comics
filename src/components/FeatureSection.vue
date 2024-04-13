@@ -47,6 +47,7 @@
 
 
 <style scoped lang="scss">
+ @use './style/generic' as *;
  
  @use '../style/partials/variables' as *;
 
