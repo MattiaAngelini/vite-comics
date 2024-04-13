@@ -3,7 +3,7 @@
   import ComicsList from './components/ComicsList.vue';
   import FeatureSection from './components/FeatureSection.vue';
   import AppFooter from './components/AppFooter.vue';
-  import CardProduct from './components/CardProduct.vue';
+  import CardsProducts from './components/CardsProducts.vue';
   import Jumbotron from './components/Jumbotron.vue';
 
 
@@ -12,11 +12,12 @@
       AppHeader,
       Jumbotron,
       ComicsList,
-      CardProduct,
+      CardsProducts,
       FeatureSection,
       AppFooter,
     }
-  }
+    }
+  
 
 </script>
 
@@ -29,7 +30,7 @@
    
       <main>
 
-        <CardProduct></CardProduct>
+        <CardsProducts></CardsProducts>
          
         <ComicsList></ComicsList>
 
@@ -46,3 +47,15 @@
 <style lang="scss">
 @use './style/generic' as *;
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
