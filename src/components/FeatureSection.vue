@@ -36,7 +36,7 @@
     <ul class="d-flex gap-3 justify-content-center align-items-center m-0 p-2">      
      
         <li  v-for="card in cards">
-            <img :src="'src/assets/img/' + card.image" alt="">
+            <img class="p-3" :src="'src/assets/img/' + card.image" alt="">
             {{ card.title }}
         </li> 
     </ul>

@@ -9,7 +9,7 @@
    <section class="container d-flex justify-content-between align-items-center">
     
     <div>
-        <img src="../assets/img/dc-logo.png" alt="">
+        <img class="p-3" src="../assets/img/dc-logo.png" alt="">
     </div>
 
     <ul class="d-flex gap-3">

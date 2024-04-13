@@ -29,12 +29,11 @@
 
 <template>
 
+  <!---------------TOP FOOTER - LIST----------------->
   <section class="top-footer">
-
     <div class="ms-container container d-flex align-items p-4">
 
       <div>
-
         <ul class="m-0">
           <h6>DC ComicsList</h6>
           <li>Characters</li>
@@ -45,7 +44,6 @@
           <li>Characters</li>
           <li>Characters</li>
         </ul>
-
 
         <ul class="mt-2">
           <h6>DC ComicsList</h6>
@@ -69,7 +67,6 @@
         <li>Characters</li>
       </ul>
 
-
       <ul class="m-0">
         <h6>DC ComicsList</h6>
         <li>Characters</li>
@@ -77,30 +74,22 @@
         <li>Characters</li>
       </ul>
 
-
     </div>
-
   </section>
-
-  <section class="bottom-footer ">
-
-    <div class="container d-flex justify-content-between">
-
-    <div><span>SIGN UP NOW</span></div>
-
-    <div class="d-flex gap-3">
-      <div><span>FOLLOWUS</span></div>
+  
+  <!---------------BOTTOM FOOTER - SIGN UP & SOCIAL LOGO---------------->
+  <section class="bottom-footer p-3">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="border border-primary p-2"><span>SIGN UP NOW</span></div>
+        <div class="d-flex align-items-center gap-3">
       
+           <div class="ms-title"><span>FOLLOWUS</span></div>    
+           <div v-for="icon in socialLogo ">
+             <img class="p-2" :src="'src/assets/img/' + icon.image" alt="">      
+        </div>
 
-      <div v-for="icon in socialLogo ">
-        <img :src="'src/assets/img/' + icon.image" alt="">
-      
       </div>
     </div>
-
-
-  </div>
-  
   </section>
 
 </template>
@@ -108,8 +97,6 @@
 
 <style scoped lang="scss">
  @use '../style/partials/variables' as *;
-
-
 
  .top-footer {
   background-image: url('../assets/img/footer-bg.jpg');
@@ -124,13 +111,16 @@
     background-size: contain;
     font-size: 14px;
 
-    
   }
  }
 
  .bottom-footer {
   background-color: $brand-secondary;
   color: white;
+
+  .ms-title {
+    color: $brand-primary;
+  }
  }
 
 </style>
