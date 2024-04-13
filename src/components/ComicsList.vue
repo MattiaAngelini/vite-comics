@@ -1,6 +1,6 @@
 <script>
  export default {
-        name: 'AppMain'
+        name: 'ComicsList'
     }
 
 
@@ -8,7 +8,18 @@
 
 <template>
 
-   <section>Content goes hereeee</section>
+   <section>
+    
+    
+    
+    <div class="container p-3">Content goes hereeee</div>
+    
+  
+  
+  
+  
+  
+  </section>
 
 </template>
 
